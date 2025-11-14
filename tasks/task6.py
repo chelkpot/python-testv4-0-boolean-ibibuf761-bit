@@ -2,7 +2,9 @@
 
 def solve():
 # Ниже пишите решение задачи
-
+    a, b, c = map(int, input().split())
+    result = (a*a + b*b == c*c) or (a*a + c*c == b*b) or (b*b + c*c == a*a)
+    print(result)
    
    
 # Код ниже не трогать! он нужен для тестов
